@@ -163,6 +163,7 @@
     <Compile Include="Models\Alumno.cs">
       <DependentUpon>ModelAlumnos.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\AlumnoCE.cs" />
     <Compile Include="Models\ModelAlumnos.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
