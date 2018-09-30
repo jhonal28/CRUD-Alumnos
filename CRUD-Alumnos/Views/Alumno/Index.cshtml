@@ -22,6 +22,9 @@
             @*@Html.DisplayNameFor(model => model.Sexo)*@
         </th>
         <th>
+            Ciudad
+        </th>
+        <th>
             Fecha de Registro
             @*@Html.DisplayNameFor(model => model.FechaRegistro)*@
         </th>
@@ -49,6 +52,9 @@
                     }
                 }
 
+            </td>
+            <td>
+                @CRUD_Alumnos.Controllers.AlumnoController.NombreCiudad(item.CodCiudad)
             </td>
             <td>
                 @item.FechaRegistro.ToShortDateString()
