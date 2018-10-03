@@ -8,6 +8,7 @@ namespace CRUD_Alumnos.Models
 {
     public class AlumnoCE
     {
+        public int Id { get; set; }
         [Required]
         [Display(Name = "Ingrese Nombres")]
         public string Nombres { get; set; }
@@ -23,6 +24,12 @@ namespace CRUD_Alumnos.Models
         [Required]
         [Display(Name = "Ciudad")]
         public string CodCiudad { get; set; }
+
+        public string NombreCiudad { get; set; }
+
+        public string NombreCompleto { get { return Nombres + " " + Apellidos; } }
+
+        public System.DateTime FechaRegistro { get; set; }
     }
 
     [MetadataType(typeof(AlumnoCE))]
@@ -31,5 +38,8 @@ namespace CRUD_Alumnos.Models
     {
         //public int Estado { get; set; }
         public string NombreCompleto { get { return Nombres + " " + Apellidos; } }
+
+        public string NombreCiudad { get; set; }
+
     }
 }
